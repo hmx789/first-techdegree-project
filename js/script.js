@@ -38,6 +38,8 @@ function printQuote() {
 
     //Putting the quote inside the html page
     document.getElementById('quote-box').innerHTML = quoteDisplay;
+
+    
 }
 
 
@@ -57,6 +59,9 @@ function getRandomColor() {
 function changeBackgroundColor() {
     var rgbVals = getRandomColor();
     document.body.style.backgroundColor = 'rgb(' + rgbVals.join(',') + ')';
+    
+    //Making the background color change with a 2 second transiiton
+    document.body.style.transition = " all 2s";
 }
 
 
